@@ -1,11 +1,11 @@
 package Overload.Methods.parteTwo;
 
-import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Set;
 public class Main {
 
     public Set<Character> Gather(String name){
-        Set<Character> Hash_String = new HashSet<>();
+        Set<Character> Hash_String = new TreeSet<>();
         for(int i = 0; i < name.length(); i++){
             char character = name.charAt(i);
             Hash_String.add(character);
@@ -14,7 +14,7 @@ public class Main {
     }
 
     public Set<Integer> Gather(int number){
-        Set<Integer> Hash_Int = new HashSet<>();
+        Set<Integer> Hash_Int = new TreeSet<>();
         for(int i = 0; i <= number; i++){
             int aux;
             if(i % 2 == 0){
@@ -27,7 +27,7 @@ public class Main {
         return Hash_Int;
     }
     public static void main(String[] args){
-        String name = "Ronaldo";
+        String name = "RONALDO";
         int number = 10;
 
         Main m = new Main();
