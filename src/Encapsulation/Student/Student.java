@@ -1,11 +1,14 @@
 package Encapsulation.Student;
 
+import java.util.ArrayList;
+
 public class Student {
     private String full_name;
     private String registration;
     private String course;
     private int yearOfAdmission;
 
+    public static ArrayList<Student> S = new ArrayList<>();
     Student(String full_name, String registration, String course, int yearOfAdmission){
         this.setFullName(full_name);
         this.setRegistration(registration);
@@ -36,5 +39,19 @@ public class Student {
     }
     public int getYearOfAdmission(){
         return this.yearOfAdmission;
+    }
+
+    public static ArrayList<Student> CreateData(String full_name, String registration, String course, int yearOfAdmission){
+        S.add(new Student(full_name, registration, course, yearOfAdmission));
+        return S;
+    }
+    public static void PrintData(ArrayList<Student> students){
+        for(Student student : students){
+            System.out.printf(
+                "Full Name: " + student.getFullName() +  "\n" +
+                "Registration: " + student.getRegistration() + "\n" +
+                "Course: " + student.getCourse() + "\n" +
+                "Year of Admission: " + student.getYearOfAdmission() + "\n") ;
+        }
     }
 }

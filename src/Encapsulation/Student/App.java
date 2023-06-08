@@ -1,15 +1,29 @@
 package Encapsulation.Student;
+
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args){
-        ArrayList<Student> S = new ArrayList<>(List.of(new Student("Ronaldo", "2020", "BTI", 2020)));
-        S.add(new Student("Maria", "2019", "CeT", 2019));
+        Scanner scanner = new Scanner(System.in);
+        String full_name , registration, course;
+        int yearOfAdmission;
+        ArrayList<Student> S = new ArrayList<>();
 
-        for (Student student : S) {
-            System.out.printf(student.getFullName() + " " + student.getRegistration() + " " + student.getCourse() + " " + student.getYearOfAdmission());
-            System.out.println();
+        for(int i = 0; i < 3; i++){
+            System.out.print("Full name: ");
+            full_name = scanner.nextLine();
+            System.out.print("Registration: ");
+            registration = scanner.nextLine();
+            System.out.print("Course: ");
+            course = scanner.nextLine();
+            System.out.print("Year of Admission: ");
+            yearOfAdmission = scanner.nextInt();
+            if(yearOfAdmission > 0){
+                scanner.nextLine();
+            }
+           S = Student.CreateData(full_name, registration, course, yearOfAdmission);
         }
+        Student.PrintData(S);
     }
 }

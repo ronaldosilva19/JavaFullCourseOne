@@ -28,4 +28,15 @@ public class Car {
     public void setYear(int year){
         this.year = year;
     }
+
+    public void Copy(Car car){
+        this.setMake(car.getMake());
+        this.setModel(car.getModel());
+        this.setYear(car.getYear());
+    }
+    public String toString(){
+        return "Make : " + this.getMake() + "\n" +
+                "Model : " + this.getModel() + "\n" +
+                "Year : " + this.getYear();
+    }
 }

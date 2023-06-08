@@ -1,12 +1,11 @@
 package Encapsulation.Car;
-
-import Encapsulation.Car.Car;
-
 public class Main {
     public static void main(String[] args){
-        Car car = new Car("Audi", "Conversible", 2023);
-        System.out.println(car.getMake());
-        System.out.println(car.getModel());
-        System.out.println(car.getYear());
+        Car car = new Car("Audi", "Convertible", 2023);
+        Car car1 = new Car("Corvette", "Plus", 2019);
+
+        car1.Copy(car); // copy of objects.
+        System.out.println(car);
+        System.out.println(car1);
     }
 }
