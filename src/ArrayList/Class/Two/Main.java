@@ -47,13 +47,34 @@ public class Main {
             System.out.println(iterator.next());
         }
     }
+
+    public static ArrayList<String> Clone(ArrayList<String> names){
+        ArrayList<String> copyNames = new ArrayList<>();
+        for(String name : names){
+            copyNames.add(name);
+        }
+        return copyNames;
+    }
+
     public static void main(String[] args) {
         ArrayList<String> names;
+
         names = CreateArrayList();
         System.out.println("Array elements after operations.");
         PrintArrayList(names);
         System.out.println();
         System.out.println("Though Iterator:");
         PrintThroughIterator(names);
+
+        ArrayList<String> copyNames = Clone(names);
+        names.clear();
+
+        if(names.isEmpty()){
+            System.out.println("ArraysList is empty.");
+            System.out.println("Size of ArrayList: " + names.size());
+        }else{
+            System.out.println("Size of ArrayList: " + names.size());
+        }
+        System.out.println("Size of CopyArrayList: " + copyNames.size());
     }
 }
