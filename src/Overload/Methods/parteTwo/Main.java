@@ -28,7 +28,6 @@ public class Main {
     }
     public static void main(String[] args){
         String name = "RONALDO";
-        int number = 10;
 
         Main m = new Main();
        Set<Integer> In = m.Gather(10);
