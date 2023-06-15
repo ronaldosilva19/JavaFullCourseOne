@@ -7,6 +7,7 @@ public class Brazil extends Country{
         super(country, federation_units, population);
         this.capital = capital;
     }
+    @Override
     void Language(){
         System.out.println("Language : Portuguese/Brazil");
     }
