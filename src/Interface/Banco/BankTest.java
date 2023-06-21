@@ -1,5 +1,7 @@
 package Interface.Banco;
 
+import java.util.Scanner;
+
 public class BankTest {
     public static void main(String[] args) {
         Bank bankBrazil = new BankBrazil();
@@ -21,5 +23,14 @@ public class BankTest {
         bankInter.Deposit(account1, 40.99);
         bankInter.Withdraw(account1, 300);
         bankInter.Extract(account1);
+
+        BankBrazil bankBrazil1 = new BankBrazil();
+        Scanner scanner = new Scanner(System.in);
+        int value = scanner.nextInt();
+        if(bankBrazil1.Transfer(account, account1, value)){
+            System.out.println("OK");
+        }else{
+            System.out.println("Failed!");
+        }
     }
 }
