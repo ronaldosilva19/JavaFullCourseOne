@@ -1,7 +1,7 @@
 package Interface.Banco;
 
 public class BankBrazil implements Bank{
-    private Account AccountBankBrazil;
+    private final Account AccountBankBrazil;
 
     BankBrazil(){
         this.AccountBankBrazil = new Account();

@@ -1,9 +1,7 @@
 package Interface.Banco;
 
-import java.lang.reflect.AccessibleObject;
-
 public class BankInter implements Bank{
-    private Account AccountBankInter;
+    private final Account  AccountBankInter;
 
     BankInter(){
         this.AccountBankInter = new Account();
