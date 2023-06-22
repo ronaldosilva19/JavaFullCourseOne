@@ -1,4 +1,4 @@
-package Constructors;
+package Constructors.Example1;
 
 public class Human {
     String name;

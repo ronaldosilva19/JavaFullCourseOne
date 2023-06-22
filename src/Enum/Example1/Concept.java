@@ -1,4 +1,7 @@
-package Enum;
+package Enum.Example1;
+/**
+ * @author ronaldosilva
+ */
 
 public enum Concept {
     GREAT,
