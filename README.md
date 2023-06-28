@@ -1,2 +1,2 @@
 ### Object Oriented Programming with Java.
-Learning Java with YouTube.
+Learning object-oriented programming with the Java language.
