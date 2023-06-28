@@ -1,6 +1,6 @@
-package Inheritance;
+package Inheritance.ExampleOne;
 
-public class Bicycle extends Vehicle{
+public class Bicycle extends Vehicle {
     int wheels = 2;
     int pedals = 2;
 

@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritance.ExampleOne;
 
 public class Vehicle {
     double speed;

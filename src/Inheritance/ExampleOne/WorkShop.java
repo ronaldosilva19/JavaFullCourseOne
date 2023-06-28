@@ -1,4 +1,8 @@
-package Inheritance;
+package Inheritance.ExampleOne;
+
+import Inheritance.ExampleOne.Bicycle;
+import Inheritance.ExampleOne.Car;
+import Inheritance.ExampleOne.Vehicle;
 
 public class WorkShop {
 
